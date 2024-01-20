@@ -1,1 +1,257 @@
 /* место для вашего кода */
+.app {
+    padding-bottom: 91px;
+  }
+  .app .header {
+    display: grid;
+    grid-template-columns: 2fr 1.45fr 1.2fr;
+    padding: 93px 24px 96px 25px;
+  }
+  .app .header .menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-left: 22px;
+  }
+  .app .header .menu__item.active {
+    list-style-type: none;
+  }
+  .app .header .menu__item__link {
+    font-size: 18px;
+    text-transform: lowercase;
+  }
+  .app .header .menu__item__link.active {
+    text-decoration: none;
+  }
+  .app .header img {
+    max-width: 148px;
+    max-height: 105px;
+    display: flex;
+  }
+  .app .header .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    font-size: 18px;
+    line-height: 24.3px;
+  }
+  .app .header .contacts address {
+    max-width: 240px;
+    font-style: normal;
+  }
+  .app .main .jambotron {
+    position: relative;
+    padding: 165px 50px 62px 50px;
+    background: url("../images/cover.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 147px;
+  }
+  .app .main .jambotron .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  .app .main .jambotron__title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+  .app .main .jambotron__title span {
+    color: #FFF;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+  }
+  .app .main .jambotron__title span.center {
+    text-align: center;
+  }
+  .app .main .jambotron__title span.right {
+    text-align: right;
+  }
+  .app .main .jambotron__info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  .app .main .jambotron__info p {
+    color: #fff;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    word-spacing: 24.2px;
+  }
+  .app .main .jambotron__info a {
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px 32px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+  }
+  .app .main .jambotron__info a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .app .main .lots {
+    padding: 179px 24px 148px 24px;
+  }
+  .app .main .lots__title {
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    padding-left: 40px;
+  }
+  .app .main .lots__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+  }
+  .app .main .lots__cards__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 48px 40px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .app .main .lots__cards__card .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  .app .main .lots__cards__card.left {
+    background-image: url("../images/card-lot-01.jpg");
+  }
+  .app .main .lots__cards__card.center {
+    background-image: url("../images/card-lot-02.jpg");
+  }
+  .app .main .lots__cards__card.right {
+    background-image: url("../images/card-lot-03.jpg");
+  }
+  .app .main .lots__cards__card .title {
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+  .app .main .lots__cards__card .text {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    z-index: 2;
+  }
+  .app .main .lots__more {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin-top: 30px;
+    padding-left: 40px;
+  }
+  .app .main .about {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 35px 47px 0 47px;
+    gap: 72px;
+  }
+  .app .main .about .left .logo {
+    background-image: url("../images/logo-white.svg");
+    background-repeat: no-repeat;
+    background-size: 148px;
+    background-position: center center;
+    background-color: #000;
+    padding: 64px 44px;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+  }
+  .app .main .about .right {
+    display: flex;
+    flex-direction: column;
+    gap: 101px;
+    padding-top: 98px;
+  }
+  .app .main .about .right .title {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .app .main .about .right .text {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+  .app .main .about .right .text .paragraf {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .app .footer {
+    display: grid;
+    grid-template-columns: 240px 149px 240px;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-top: 178px;
+  }
+  .app .footer .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    font-size: 18px;
+    line-height: 24.3px;
+  }
+  .app .footer .contacts address {
+    max-width: 240px;
+    font-style: normal;
+  }
+  .app .footer .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .app .footer .menu__link {
+    font-size: 18px;
+    text-transform: lowercase;
+    text-align: center;
+  }
+  .app .footer .menu__link.active {
+    text-decoration: none;
+  }
+  .app .footer .socials {
+    display: flex;
+    gap: 48px;
+  }
+  .app .footer .socials a {
+    width: 100%;
+  }
+  .app .footer .socials a img {
+    max-width: 48px;
+  }

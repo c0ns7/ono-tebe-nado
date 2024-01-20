@@ -32,3 +32,12 @@ a {
 img {
   width: 100%;
 }
+
+/* Нововведения */
+html {
+  scroll-behavior: smooth;
+}
+
+ul, li {
+  list-style-type: circle;
+}
