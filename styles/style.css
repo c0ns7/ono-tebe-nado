@@ -1,257 +1,280 @@
 /* место для вашего кода */
-.app {
-    padding-bottom: 91px;
-  }
-  .app .header {
-    display: grid;
-    grid-template-columns: 2fr 1.45fr 1.2fr;
-    padding: 93px 24px 96px 25px;
-  }
-  .header .menu {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    padding-left: 22px;
-  }
-  .header .menu__item.active {
-    list-style-type: none;
-  }
-  .header .menu__item__link {
-    font-size: 18px;
-    text-transform: lowercase;
-  }
-  .header .menu__item__link.active {
-    text-decoration: none;
-  }
-  .header img {
-    max-width: 148px;
-    max-height: 105px;
-    display: flex;
-  }
-  .header .contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    font-size: 18px;
-    line-height: 24.3px;
-  }
-  .header .contacts address {
-    max-width: 240px;
-    font-style: normal;
-  }
-  .main .jambotron {
-    position: relative;
-    padding: 165px 50px 62px 50px;
-    background: url("../images/cover.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 147px;
-  }
-  .jambotron .overlay {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-  }
-  .jambotron__title {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-  }
-  .jambotron__title span {
-    color: #FFF;
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 115%;
-    letter-spacing: 30px;
-    text-transform: uppercase;
-  }
-  .jambotron__title span.center {
-    text-align: center;
-  }
-  .jambotron__title span.right {
-    text-align: right;
-  }
-  .jambotron__info {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1;
-  }
-  .jambotron__info p {
-    color: #fff;
-    font-size: 22px;
-    line-height: 28px;
-    text-transform: uppercase;
-    word-spacing: 24.2px;
-  }
-  .jambotron__info a {
-    color: #FFF;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 12px 32px;
-    border: 1px solid #fff;
-    text-decoration: none;
-    transition: 0.4s ease-in-out;
-  }
-  .jambotron__info a:hover {
-    background-color: #fff;
-    color: #000;
-  }
-  .main .lots {
-    padding: 179px 24px 148px 24px;
-  }
-  .main .lots__title {
-    color: #000;
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 27px;
-    padding-left: 40px;
-  }
-  .main .lots__cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 25px;
-  }
-  .main .lots__cards__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    padding: 48px 40px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-   .lots__cards__card .overlay {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-  }
-   .lots__cards__card.left {
-    background-image: url("../images/card-lot-01.jpg");
-  }
-   .lots__cards__card.center {
-    background-image: url("../images/card-lot-02.jpg");
-  }
-   .lots__cards__card.right {
-    background-image: url("../images/card-lot-03.jpg");
-  }
-   .lots__cards__card .title {
-    position: relative;
-    color: #fff;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 120%;
-    text-transform: uppercase;
-    z-index: 2;
-  }
-   .lots__cards__card .text {
-    position: relative;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 120%;
-    z-index: 2;
-  }
-   .lots__more {
-    color: #000;
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: lowercase;
-    margin-top: 30px;
-    padding-left: 40px;
-  }
-   .about {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    padding: 35px 47px 0 47px;
-    gap: 72px;
-  }
-   .left .logo {
-    background-image: url("../images/logo-white.svg");
-    background-repeat: no-repeat;
-    background-size: 148px;
-    background-position: center center;
-    background-color: #000;
-    padding: 64px 44px;
-    border-radius: 50%;
-    width: 240px;
-    height: 240px;
-  }
-   .about .right {
-    display: flex;
-    flex-direction: column;
-    gap: 101px;
-    padding-top: 98px;
-  }
-    .right .title {
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-    .right .text {
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
-  }
-    .right .text .paragraf {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .footer {
-    display: grid;
-    grid-template-columns: 240px 149px 240px;
-    justify-content: space-between;
-    padding: 0 50px;
-    margin-top: 178px;
-  }
-  .footer .contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    font-size: 18px;
-    line-height: 24.3px;
-  }
-  .contacts address {
-    max-width: 240px;
-    font-style: normal;
-  }
-  .footer .menu {
-    display: flex;
-    flex-direction: column;
-  }
-  .menu__link {
-    font-size: 18px;
-    text-transform: lowercase;
-    text-align: center;
-  }
-  .menu__link.active {
-    text-decoration: none;
-  }
-  .footer .socials {
-    display: flex;
-    gap: 48px;
-  }
-  .socials a {
-    width: 100%;
-  }
-  .socials a img {
-    max-width: 48px;
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: circle;
+}
+
+button {
+  all: unset;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 2fr 1.45fr 1.2fr;
+  padding: 93px 24px 96px 25px;
+}
+.header .header__menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding-left: 22px;
+}
+.header__menu .header__menu__item {
+  font-size: 18px;
+  text-transform: lowercase;
+}
+.header__menu__item__active {
+  list-style-type: none;
+}
+.header__menu__item__link__active {
+  text-decoration: none;
+}
+.header__logo .header__logo__image {
+  max-width: 148px;
+  max-height: 105px;
+}
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  font-size: 18px;
+  line-height: 24.3px;
+  font-style: normal;
+}
+.header__contacts .header__contacts__address {
+  max-width: 240px;
+}
+.main .jambotron {
+  position: relative;
+  padding: 165px 50px 62px 50px;
+  background: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 147px;
+}
+.jambotron__title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  gap: 9px;
+}
+.jambotron__title {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+.jambotron__title .aligned__text {
+  letter-spacing: 32px;
+}
+.aligned__text.aligned__text__center {
+  text-align: center;
+}
+.aligned__text.aligned__text__right {
+  text-align: right;
+  letter-spacing: 60px;
+}
+.aligned__text .change__tracking {
+  letter-spacing: 56px;
+}
+.change__tracking.change__tracking__right {
+  letter-spacing: 29px;
+}
+.aligned__text .default__tracking {
+  letter-spacing: normal;
+}
+.jambotron__info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+.jambotron__info .jambotron__info__text {
+  color: #fff;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 24.2px;
+}
+.jambotron__info .jambotron__info__button {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.jambotron__info .jambotron__info__button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.main .lots {
+  padding: 179px 24px 148px 24px;
+}
+.main .lots__title {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+  padding-left: 40px;
+}
+.main .lots__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+.lots__cards .lits__cards__link {
+  display: flex;
+  text-decoration: none;
+}
+.lots__cards .lots__cards__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 48px 40px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lots__cards__card.lots__cards__card__left {
+  background-image: url("../images/card-lot-01.jpg");
+}
+.lots__cards__card.lots__cards__card__center {
+  background-image: url("../images/card-lot-02.jpg");
+}
+.lots__cards__card.lots__cards__card__right {
+  background-image: url("../images/card-lot-03.jpg");
+}
+.lots__cards__card .lots__card__title {
+  position: relative;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.lots__cards__card .lots__card__text {
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  z-index: 2;
+}
+.lots__card__text.lots__card__text__change {
+  margin: auto 0;
+}
+.lots__more {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: lowercase;
+  padding-left: 40px;
+}
+.about {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 35px 47px 0 47px;
+  gap: 72px;
+}
+.about__left .about__logo {
+  background-image: url("../images/logo-white.svg");
+  background-repeat: no-repeat;
+  background-size: 148px;
+  background-position: center center;
+  background-color: #000;
+  padding: 64px 44px;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+}
+.about .about__right {
+  display: flex;
+  flex-direction: column;
+  gap: 101px;
+  padding-top: 98px;
+}
+.about__right .about__title {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.about__right .about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.about__text .about__paragraf {
+  font-size: 20px;
+  line-height: 24px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 240px 149px 240px;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin: 178px 0 91px 0;
+}
+.footer .footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  font-size: 18px;
+  line-height: 24.3px;
+  font-style: normal;
+}
+.footer__contacts .footer__contacts__address {
+  max-width: 240px;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+}
+.footer__menu__link {
+  font-size: 18px;
+  text-transform: lowercase;
+  text-align: center;
+}
+.footer__menu__link__active {
+  text-decoration: none;
+}
+.footer .footer__socials {
+  display: flex;
+  gap: 48px;
+  list-style-type: none;
+}
+.footer__socials__item {
+  width: 100%;
+  list-style-type: none;
+}
+.footer__socials__link .footer__socials__image {
+  max-width: 48px;
+}
